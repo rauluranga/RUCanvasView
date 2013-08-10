@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   }
   s.source = {
     :git => 'https://github.com/rauluranga/RUCanvasView.git',
-    :commit => '75ab272922de63e06ef4ba2a5b61ea9a98bd36f5'
+    :tag => '0.0.1'
   }
   s.platform     = :ios, '5.0'
   s.source_files = 'Source/*.{h,m}'

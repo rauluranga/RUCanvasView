@@ -18,6 +18,7 @@
 		C4DCD53417B5FA1100605A2E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DCD53317B5FA1100605A2E /* Default-568h@2x.png */; };
 		C4DCD53717B5FA1100605A2E /* RUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DCD53617B5FA1100605A2E /* RUViewController.m */; };
 		C4DCD53A17B5FA1100605A2E /* RUViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4DCD53817B5FA1100605A2E /* RUViewController.xib */; };
+		C4DCD54317B5FA4300605A2E /* RUCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DCD54217B5FA4300605A2E /* RUCanvasView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		C4DCD53517B5FA1100605A2E /* RUViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RUViewController.h; sourceTree = "<group>"; };
 		C4DCD53617B5FA1100605A2E /* RUViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RUViewController.m; sourceTree = "<group>"; };
 		C4DCD53917B5FA1100605A2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RUViewController.xib; sourceTree = "<group>"; };
+		C4DCD54117B5FA4300605A2E /* RUCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUCanvasView.h; sourceTree = "<group>"; };
+		C4DCD54217B5FA4300605A2E /* RUCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUCanvasView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 		C4DCD51117B5FA1100605A2E = {
 			isa = PBXGroup;
 			children = (
+				C4DCD54017B5FA4300605A2E /* Source */,
 				C4DCD52317B5FA1100605A2E /* RUCanvasViewTest */,
 				C4DCD51C17B5FA1100605A2E /* Frameworks */,
 				C4DCD51B17B5FA1100605A2E /* Products */,
@@ -105,6 +109,15 @@
 				C4DCD53317B5FA1100605A2E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4DCD54017B5FA4300605A2E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C4DCD54117B5FA4300605A2E /* RUCanvasView.h */,
+				C4DCD54217B5FA4300605A2E /* RUCanvasView.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +190,7 @@
 				C4DCD52A17B5FA1100605A2E /* main.m in Sources */,
 				C4DCD52E17B5FA1100605A2E /* RUAppDelegate.m in Sources */,
 				C4DCD53717B5FA1100605A2E /* RUViewController.m in Sources */,
+				C4DCD54317B5FA4300605A2E /* RUCanvasView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

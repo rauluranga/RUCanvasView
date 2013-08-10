@@ -7,9 +7,10 @@
 //
 
 #import "RUViewController.h"
+#import "RUCanvasView.h"
 
 @interface RUViewController ()
-
+@property(nonatomic) RUCanvasView *canvas;
 @end
 
 @implementation RUViewController
@@ -17,7 +18,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.canvas = [[RUCanvasView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height)];
+    [self.canvas.currentLine setRed:1.];
+    [self.canvas.currentLine setGreen:0.];
+    [self.canvas.currentLine setBlue:0.];
+    [self.canvas.currentLine setOpacity:0.2];
+    [self.view insertSubview:self.canvas atIndex:0];
+}
+
+- (IBAction)handleClear:(UIButton *)sender {
+    [self.canvas clearCanvas];
 }
 
 - (void)didReceiveMemoryWarning

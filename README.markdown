@@ -3,7 +3,21 @@ RUCanvasView
 
 Lightweight implementation for drawing on iOS, based on the [@raywenderlich](https://twitter.com/rwenderlich) tutorial: [How To Make A Simple Drawing App with UIKit.](http://www.raywenderlich.com/18840/how-to-make-a-simple-drawing-app-with-uikit)
 
-### Implementation 
+#Installation
+
+###With CocoaPods
+
+Just add this line to your podfile
+
+```
+pod 'RUCanvasView', :git => 'https://github.com/rauluranga/RUCanvasView'
+```
+
+#Manual installation
+
+Just drag & drop RUCanvasView.h/.m into your project.
+
+# Implementation 
 Easy as pie.
 
 ``` objective-c
@@ -22,9 +36,6 @@ and BAM! you have now all the basic implementation for a drawing application.
 You can modify line style using the following code:
 
 ``` objective-c
-    [canvas.currentLine setRed:1.f];
-    [canvas.currentLine setGreen:0.f];
-    [canvas.currentLine setBlue:0.f];
-    [canvas.currentLine setOpacity:0.2];
-    [canvas.currentLine setBrush:5.f]
+    [self.canvas setBrushColor:[UIColor colorWithRed:1. green:0. blue:0. alpha:0.2]];
+    [self.canvas setBrushSize:5.f];
 ```

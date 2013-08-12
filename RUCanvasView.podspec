@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'RUCanvasView'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.summary      = 'Lightweight implementation for drawing on iOS.'
   s.homepage     = 'https://github.com/rauluranga/RUCanvasView'
   s.license      = { :type => 'MIT', :file => 'license.txt' }
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   }
   s.source = {
     :git => 'https://github.com/rauluranga/RUCanvasView.git',
-    :tag => '0.0.1'
+    :tag => '0.0.2'
   }
   s.platform     = :ios, '5.0'
   s.source_files = 'Source/*.{h,m}'

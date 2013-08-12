@@ -20,10 +20,8 @@
     [super viewDidLoad];
     
     self.canvas = [[RUCanvasView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height)];
-    [self.canvas.currentLine setRed:1.];
-    [self.canvas.currentLine setGreen:0.];
-    [self.canvas.currentLine setBlue:0.];
-    [self.canvas.currentLine setOpacity:0.2];
+    [self.canvas setBrushColor:[UIColor colorWithRed:1. green:0. blue:0. alpha:0.2]];
+    [self.canvas setBrushSize:5.f];
     [self.view insertSubview:self.canvas atIndex:0];
 }
 

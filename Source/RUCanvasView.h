@@ -11,25 +11,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class RULine;
-
 @interface RUCanvasView : UIView
-
-@property(nonatomic, readonly) RULine *currentLine;
 
 -(void) clearCanvas;
 
-@end
+-(void) setBrushColor:(UIColor*)color;
+-(UIColor *) getBrushColor;
 
-@interface RULine : NSObject
-
-@property (nonatomic, assign) CGFloat red;
-@property (nonatomic, assign) CGFloat green;
-@property (nonatomic, assign) CGFloat blue;
-@property (nonatomic, assign) CGFloat brush;
-@property (nonatomic, assign) CGFloat opacity;
-
--(id) initWithRedColor:(CGFloat)red blueColor:(CGFloat)blue greenColor:(CGFloat)green brushSize:(CGFloat)brush opacity:(CGFloat)opacity;
+-(void) setBrushSize:(CGFloat) brushSize;
+-(CGFloat) getBrushSize;
 
 @end
 
